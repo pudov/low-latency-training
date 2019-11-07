@@ -32,10 +32,10 @@
 static void pb(benchmark::State& state) {
     // prologue
     size_t sz = state.range(0);
-    state.SetItemsProcessed(sz);
-    state.SetBytesProcessed(sz * sizeof(int));
-    state.SetLabel("WTF");
-    state.counters["size"] = sz;
+    // state.SetItemsProcessed(sz);
+    // state.SetBytesProcessed(sz * sizeof(int));
+    // state.SetLabel("WTF");
+    // state.counters["size"] = sz;
 
     for (auto _ : state) {
         std::vector<int> v;
